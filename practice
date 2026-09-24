@@ -1,0 +1,11 @@
+#remove duplicates 
+
+nums=[1,1,1,1,2,2,2,3,3,4,5,6,6]
+k=0
+
+for num in nums:
+    if k==0 or num!=nums[k-1]:
+        nums[k]=num
+        k=k+1
+print(k)
+    
